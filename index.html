@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Cinema</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+<h1>Watch <span class="cinema-red">Cinema</span></h1>
+
+<div class="search-container">
+<input type="text" id="search" placeholder="Pesquisar...">
+<button><img src="imgf/lupa.png"></button>
+</div>
+</div>
+
+<div class="hero main-hero">
+<div class="hero-content">
+<h2>Oppenheimer</h2>
+<p>A história do criador da bomba atômica.</p>
+<button class="btn-play" onclick="goToDetails('oppenheimer')">Assistir</button>
+</div>
+</div>
+
+<h2 class="section-title">Séries Populares</h2>
+
+<div class="carousel">
+<button class="arrow left" onclick="goLeft(this)">❮</button>
+
+<div class="carousel-track">
+
+<!-- TODAS AS SÉRIES (COM OVERLAY COMPLETO) -->
+<div class="card" data-name="stranger things" data-id="stranger">
+<img src="imgf/stranger_things.png">
+<div class="overlay"><h3>Stranger Things</h3><div class="rating">⭐ 8.7</div><p class="desc">Crianças enfrentam forças sobrenaturais.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="arcane" data-id="arcane">
+<img src="imgf/arcane.png">
+<div class="overlay"><h3>Arcane</h3><div class="rating">⭐ 9.0</div><p class="desc">Duas irmãs em guerra.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="one piece" data-id="onepiece">
+<img src="imgf/one_piace.png">
+<div class="overlay"><h3>One Piece</h3><div class="rating">⭐ 8.5</div><p class="desc">Piratas em busca do tesouro.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="fallout" data-id="fallout">
+<img src="imgf/fallout.png">
+<div class="overlay"><h3>Fallout</h3><div class="rating">⭐ 8.3</div><p class="desc">Mundo pós-apocalíptico.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="succession" data-id="succession">
+<img src="imgf/succession.png">
+<div class="overlay"><h3>Succession</h3><div class="rating">⭐ 8.8</div><p class="desc">Família disputa poder.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="the bear" data-id="bear">
+<img src="imgf/the_bear.png">
+<div class="overlay"><h3>The Bear</h3><div class="rating">⭐ 8.9</div><p class="desc">Chef salva restaurante.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="the boys" data-id="boys">
+<img src="imgf/the_boys.png">
+<div class="overlay"><h3>The Boys</h3><div class="rating">⭐ 8.7</div><p class="desc">Heróis corruptos.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="the last of us" data-id="lastofus">
+<img src="imgf/the_last_of_us.png">
+<div class="overlay"><h3>The Last of Us</h3><div class="rating">⭐ 9.1</div><p class="desc">Sobrevivência extrema.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="the white lotus" data-id="lotus">
+<img src="imgf/the_white_lotus.png">
+<div class="overlay"><h3>The White Lotus</h3><div class="rating">⭐ 8.0</div><p class="desc">Drama em resort.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="peaky blinders" data-id="peaky">
+<img src="imgf/peaky_blinders.png">
+<div class="overlay"><h3>Peaky Blinders</h3><div class="rating">⭐ 8.8</div><p class="desc">Gangue poderosa.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="the morning show" data-id="morning">
+<img src="imgf/the_morning.png">
+<div class="overlay"><h3>The Morning Show</h3><div class="rating">⭐ 8.2</div><p class="desc">Bastidores da TV.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+<div class="card" data-name="black mirror" data-id="blackmirror">
+<img src="imgf/black_mirror.png">
+<div class="overlay"><h3>Black Mirror</h3><div class="rating">⭐ 8.8</div><p class="desc">Tecnologia sombria.</p><button class="btn-play">▶ Assistir</button></div></div>
+
+</div>
+
+<button class="arrow right" onclick="goRight(this)">❯</button>
+</div>
+
+
+<div class="hero secondary-hero">
+<div class="hero-content2">
+<h2>The Batman</h2>
+<p>Batman investiga crimes em Gotham.</p>
+<button class="btn-play" onclick="goToDetails('batman')">Assistir</button>
+</div>
+</div>
+
+<h2 class="section-title">Filmes em Alta</h2>
+
+<div class="carousel">
+<button class="arrow left" onclick="goLeft(this)">❮</button>
+
+<div class="carousel-track">
+
+
+<div class="card" data-name="avatar" data-id="avatar"><img src="imgf2/avatar.png"><div class="overlay"><h3>Avatar</h3><div class="rating">⭐ 7.8</div><p class="desc">Planeta Pandora.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="bélica" data-id="belica"><img src="imgf2/belica.png"><div class="overlay"><h3>Bélica</h3><div class="rating">⭐ 7.5</div><p class="desc">Guerra intensa.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="crime 101" data-id="crime101"><img src="imgf2/crime_101.png"><div class="overlay"><h3>Crime 101</h3><div class="rating">⭐ 7.9</div><p class="desc">Investigação criminal.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="deadpool" data-id="deadpool"><img src="imgf2/deadpool.png"><div class="overlay"><h3>Deadpool</h3><div class="rating">⭐ 8.0</div><p class="desc">Anti-herói.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="hail mary" data-id="hailmary"><img src="imgf2/hail_mary.png"><div class="overlay"><h3>Hail Mary</h3><div class="rating">⭐ 8.2</div><p class="desc">Missão espacial.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="iron lug" data-id="ironlug"><img src="imgf2/iron_lug.png"><div class="overlay"><h3>Iron Lung</h3><div class="rating">⭐ 7.4</div><p class="desc">Herói improvável.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="predator" data-id="predator"><img src="imgf2/pradator.png"><div class="overlay"><h3>Predator</h3><div class="rating">⭐ 7.8</div><p class="desc">Criatura mortal.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="revenge" data-id="revenge"><img src="imgf2/revenge.png"><div class="overlay"><h3>Revenge</h3><div class="rating">⭐ 7.6</div><p class="desc">Vingança.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="shelter" data-id="shelter"><img src="imgf2/shelter.png"><div class="overlay"><h3>Shelter</h3><div class="rating">⭐ 7.3</div><p class="desc">Mistério.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="socorro" data-id="socorro"><img src="imgf2/socorro.png"><div class="overlay"><h3>Socorro</h3><div class="rating">⭐ 7.2</div><p class="desc">Terror.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="zootopia 2" data-id="zootopia"><img src="imgf2/zootopia_2.png"><div class="overlay"><h3>Zootopia 2</h3><div class="rating">⭐ 8.1</div><p class="desc">Nova aventura.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="oppenheimer" data-id="oppenheimer"><img src="imgf2/oppenheimerp.png"><div class="overlay"><h3>Oppenheimer</h3><div class="rating">⭐ 8.6</div><p class="desc">Bomba atômica.</p><button class="btn-play">▶</button></div></div>
+
+<div class="card" data-name="the batman" data-id="batman"><img src="imgf2/the_batmanp.png"><div class="overlay"><h3>The Batman</h3><div class="rating">⭐ 8.5</div><p class="desc">Investigação em Gotham.</p><button class="btn-play">▶</button></div></div>
+
+</div>
+
+<button class="arrow right" onclick="goRight(this)">❯</button>
+</div>
+
+<script>
+function goLeft(btn){
+const track = btn.parentElement.querySelector(".carousel-track");
+track.scrollBy({left:-300,behavior:"smooth"});
+}
+
+function goRight(btn){
+const track = btn.parentElement.querySelector(".carousel-track");
+track.scrollBy({left:300,behavior:"smooth"});
+}
+
+const searchInput = document.getElementById("search");
+
+searchInput.addEventListener("input", () => {
+  const value = searchInput.value.toLowerCase().trim();
+
+  const heroes = document.querySelectorAll(".hero");
+  const sections = document.querySelectorAll(".section-title");
+
+  // esconder hero + títulos
+  if (value.length > 0) {
+    heroes.forEach(hero => hero.classList.add("hidden"));
+    sections.forEach(s => s.style.display = "none");
+  } else {
+    heroes.forEach(hero => hero.classList.remove("hidden"));
+    sections.forEach(s => s.style.display = "block");
+  }
+
+  // filtro dos cards
+  document.querySelectorAll(".card").forEach(card => {
+    card.style.display = card.dataset.name.includes(value) ? "" : "none";
+  });
+});
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    localStorage.setItem("movie", card.dataset.id);
+    window.location.href = "detalhes.html";
+  });
+});
+function goToDetails(id) {
+  // salva o filme
+  localStorage.setItem("movie", id);
+
+  // aplica fade
+  document.body.classList.add("fade-out");
+
+  // espera animação terminar
+  setTimeout(() => {
+    window.location.href = "detalhes.html";
+  }, 400);
+}
+</script>
+
+</body>
+</html>
